@@ -648,10 +648,6 @@ video {
   margin-right: 0.25rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -734,6 +730,10 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-24 {
