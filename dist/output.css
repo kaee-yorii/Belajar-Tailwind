@@ -616,6 +616,10 @@ video {
   margin-left: -18rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -638,6 +642,10 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .ml-7 {
@@ -674,6 +682,14 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-2\.5 {
+  margin-top: 0.625rem;
 }
 
 .mt-3 {
@@ -786,6 +802,10 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-4 {
@@ -1247,10 +1267,6 @@ video {
   text-align: start;
 }
 
-.text-end {
-  text-align: end;
-}
-
 .font-playfair {
   font-family: Playfair Display, serif;
 }
@@ -1389,6 +1405,12 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-md {
