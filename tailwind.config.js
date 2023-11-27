@@ -16,7 +16,8 @@ module.exports = {
           200: '#888883'
         },
         bluerose : '#679BE9',
-        calmrose: '#CA8379'
+        calmrose: '#CA8379',
+        calmpink :'#F1D5DA'
       },
       fontFamily:{
         'roboto':['Roboto', 'sans-serif'],
