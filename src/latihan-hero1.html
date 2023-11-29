@@ -40,26 +40,20 @@
             </div>
         </div>
     </header>
-    <main class="min-h-screen pt-32 md:grid lg:grid-cols-2 md:grid-cols-1 gap-4 p-4 max-w-5xl mx-auto items-center">
-        <div class="bg-white md:mx-auto max-md:text-center ">
-<!--             FIXME mobile view: default font size tidak diset, jadinya terlalu kecil  -->
-<!--             TODO coba pakai <br> untuk membuat new line, jadi  ... your <br > Dodoles ... -->
-            <div class="font-playfair font-bold lg:text-6xl md:text-4xl lg:leading-tight sm:text-3xl">Crafting Your
+    <main class="min-h-screen flex pt-32 md:grid lg:grid-cols-2 md:grid-cols-1 gap-4 p-4 max-w-5xl mx-auto items-center">
+            <div class="font-playfair font-bold text-6xl max-md:text-4xl lg:leading-tight max-sm:text-3xl">Crafting Your
                 Doodles Story</div>
-            <div class="text-xl py-4 md:pl-16">Bautiful Doodles to Tell Your Story</div>
+            <div class="text-xl py-4">Bautiful Doodles to Tell Your Story</div>
             <div class="md:pl-32">
                 <button
-                    class=" bg-indigo-500 text-white py-2 px-2 rounded mr-3 hover:scale-125 duration-500 ease-out">Download</button>
-                <button class="border border-slate-900 py-2 px-2 rounded hover:scale-125 duration-500 ease-out">Sign
+                    class=" bg-indigo-500 text-white py-2 px-2 rounded mr-3 hover:scale-125 duration-500 ease-in">Download</button>
+                <button class="border border-slate-900 py-2 px-2 rounded hover:scale-125 duration-500 ease-in">Sign
                     In</button>
             </div>
         </div>
         <div class="h-full w-full relative md:ml-40">
-<!--             FIXME set width on mobile view -->
-<!--             FIXME samakan width kedua image -->
-<!--             TODO tambahkan animasi hover -->
-            <img src="svg/iphone-1.svg" class="w-56 absolute top-8 hover:" alt="">
-            <img src="svg/iphone-2.svg" class="w-60 absolute left-40 top-20" alt="">
+            <img src="svg/iphone-1.svg" class="max-sm:w-30 w-60 absolute top-8 hover:scale-75 duration-300 ease-out" alt="">
+            <img src="svg/iphone-2.svg" class="max-sm:w-30 w-60 absolute left-40 top-8 hover:scale-75 duration-300 ease-out" alt="">
         </div>
     </main>
     <!-- <footer></footer> -->
