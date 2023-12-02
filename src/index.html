@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,32 @@
     <link rel="stylesheet" href="index.css">
     <title>Homepage</title>
 </head>
+
 <body>
 
     <!-- INI HEADER -->
-    
+
     <header class="bg-calmrose md:grow h-24 w-full gap-4 p-2 flex justify-center">
         <div class="grow flex justify-start items-center mb-10 max-md:hidden pt-5">
             <img class="mt-2.5 w-12 h-12 rounded-full border2 border-slate-900" src="img/download (8).jpeg" alt="">
             <div class="mt-2 border-slate-900 ">
-                <div class="max-md:hidden border-r-2 border-slate-900 font-playfair my-5 mx-2 text-2xl p-3 ">by kae</div>
+                <div class="max-md:hidden border-r-2 border-slate-900 font-playfair my-5 mx-2 text-2xl p-3 ">by kae
+                </div>
             </div>
         </div>
         <div class=" grow justify-center ">
-            <div class="grow max-sm:hidden mt-3 ml-5 font-playfair max-md:p text-5xl text-pink-950 pt-2">Tailwind Training</div>
+            <div class="grow max-sm:hidden mt-3 ml-5 font-playfair max-md:p text-5xl text-pink-950 pt-2">Tailwind
+                Training</div>
         </div>
     </header>
 
     <!-- INI MAIN -->
-    
+
     <main class="bg-calmpink min-h-screen">
-        <div id="grid" class="pt-10 grid max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pb-10 mr-10">
-            </div> 
-            
+        <div id="grid"
+            class="pt-10 grid max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pb-10 mr-10">
+        </div>
+
         </div>
     </main>
     <footer class="bg-rose-300 h-20 ">
@@ -71,37 +76,51 @@
                     <span class="font-bold "><a href="${link}" class="hover:bg-indigo-500">${tittle}</a></span>
                 </div>
             </div>`
-        
-            grid.innerHTML+=html_iframe
+
+        grid.innerHTML += html_iframe
 
     };
 
-    
+
     const iframes = document.getElementsByTagName('iframe')
     console.log(iframes)
-    
+
     const div = grid.querySelector('div');
     console.log(div)
 
-    const width = div.clientWidth;
-    console.log(width)
 
-    const scale1 = width/1920;
-    const scale2 = scale1 * 100;
-    const scale3 = Math.ceil(scale2);
-    const scale4 = scale3/100;
-    const scale_final = Math.ceil((width/1920) *100) /100;
+    window.addEventListener(
+        'resize', () => {
+            console.log('resize')
+            calculate_scale()
+        }
+    )
 
-    console.log(scale1)
-    console.log(scale2)
-    console.log(scale3)
-    console.log(scale4)
-    console.log(scale_final)
-    
-    for (let i = 0; i < iframes.length; i++) {
-        const iframe = iframes[i];
-        console.log(iframe)
-    }
-    </script>
+    const calculate_scale = function () {
+        const width = div.clientWidth;
+
+
+        const scale1 = width / 1920;
+        const scale2 = scale1 * 100;
+        const scale3 = Math.ceil(scale2);
+        const scale4 = scale3 / 100;
+        const scale_final = Math.ceil((width / 1920) * 100) / 100;
+
+        console.log(scale_final)
+
+        for (let i = 0; i < iframes.length; i++) {
+            const iframe = iframes[i];
+            const scale = `scale(${scale_final})`;
+
+            iframe.style.setProperty(
+                'transform',
+                scale
+            );
+        }
+    };
+
+    calculate_scale();
+
+</script>
 
 </html>
