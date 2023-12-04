@@ -613,6 +613,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-ml-60 {
   margin-left: -15rem;
 }
@@ -791,6 +796,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -1136,6 +1145,12 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.from-zinc-500 {
+  --tw-gradient-from: #71717a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(113 113 122 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .object-cover {
@@ -1755,6 +1770,10 @@ video {
 }
 
 @media not all and (min-width: 480px) {
+  .max-sm\:absolute {
+    position: absolute;
+  }
+
   .max-sm\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -1765,6 +1784,14 @@ video {
 
   .max-sm\:h-80 {
     height: 20rem;
+  }
+
+  .max-sm\:h-32 {
+    height: 8rem;
+  }
+
+  .max-sm\:w-\[30px\] {
+    width: 30px;
   }
 
   .max-sm\:grid-cols-1 {
@@ -1957,6 +1984,11 @@ video {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .md\:pl-32 {
