@@ -9,7 +9,6 @@
 </head>
 
 <body>
-<!--     FIXME perbaiki header, pakai absolute -->
     <header class=" bg-teal-600 flex gap-4 py-2 px-2 font-roboto items-center mx-auto">
         <div class="md:flex grow gap-4 items-center">
             <div class="flex grow max-md:justify-between gap-4">
@@ -25,7 +24,7 @@
                         href="">Artists</a>
                 </nav>
                 <div class=" lg:bg-white grow flex gap-2 items-center lg:border rounded p-1.5">
-                    <img class="w-4 h-4 max-md:w-8 max-md:h-8" src="svg/search.svg" alt="">
+                    <img class="w-4 h-4 max-md:w-8 max-md:h-8 max-sm:absolute" src="svg/search.svg" alt="">
                     <input type="text" placeholder="Search" class="grow outline-none max-md:hidden">
                 </div>
             </div>
@@ -39,8 +38,8 @@
         </div>
     </header>
 <!--     FIXME bg-teal set di main saja. kasih h-screen, padding top sesuai header -->
-    <main class="items-center justify-center">
-        <div class="bg-teal-600 text-center pt-2">
+    <main class=" bg-teal-600 items-center justify-center h-screen">
+        <div class="text-center pt-3">
             <div class="text-white py-2 text-5xl font-playfair font-bold">Beautiful Doodles to <br>  Tell Your Story</div>
             <div class="text-white font-roboto text-2xl py-2"> Beautiful Doodles to Tell Your Story</div>
             <button
@@ -49,7 +48,7 @@
                 class="text-slate-900 border bg-white border-slate-900 p-2 rounded hover:scale-125 duration-300">Sign
                 In</button>
         </div>
-        <div class="bg-teal-600 pt-3 mx-auto">
+        <div class="pt-5 mx-auto">
             <img class="mx-auto" src="svg/Woman Power Social Distance.svg" alt="">
         </div>
     </main>
