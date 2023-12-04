@@ -13,16 +13,16 @@
 
     <!-- INI HEADER -->
 
-    <header class="bg-calmrose md:grow h-24 w-full gap-4 p-2 flex justify-center">
+    <header class="bg-calmrose md:grow h-20 w-full gap-4 p-2 flex justify-center">
         <div class="grow flex justify-start items-center mb-10 max-md:hidden pt-5">
             <img class="mt-2.5 w-12 h-12 rounded-full border2 border-slate-900" src="img/download (8).jpeg" alt="">
             <div class="mt-2 border-slate-900 ">
-                <div class="max-md:hidden border-r-2 border-slate-900 font-playfair my-5 mx-2 text-2xl p-3 ">by kae
+                <div class="max-md:hidden border-r-2 border-slate-900 font-playfair items-center mx-2 text-2xl p-3 ">by kae
                 </div>
             </div>
         </div>
         <div class=" grow justify-center ">
-            <div class="grow max-sm:hidden mt-3 ml-5 font-playfair max-md:p text-5xl text-pink-950 pt-2">Tailwind
+            <div class="grow max-sm:hidden ml-5 font-playfair max-md:p text-5xl text-pink-950 pt-2">Tailwind
                 Training</div>
         </div>
     </header>
@@ -38,9 +38,10 @@
     </main>
     <footer class="bg-rose-300 h-20 ">
         <div class="flex gap-4 items justify-center py-5 px-5">
-            <img class="h-8 w-8" src="svg/instagram-svgrepo-com.svg" alt="">
-            <img class="h-9 w-9" src="svg/discord-svgrepo-com.svg" alt="">
-            <img class="h-8 w-8" src="svg/github-142-svgrepo-com.svg" alt="">
+            <a href="https://www.instagram.com/kaeropiii.__/"><img class="h-8 w-8" src="svg/instagram-svgrepo-com.svg"
+                    alt=""></a>
+            <a href="https://github.com/kaee-yorii"><img class="h-8 w-8" src="svg/github-142-svgrepo-com.svg"
+                    alt=""></a>
         </div>
     </footer>
 </body>
@@ -69,7 +70,8 @@
         const tittle = `Hero ${i + 1}`;
 
         const html_iframe = `<div class="ml-10 bg-calmrose rounded shadow-xl relative transform hover:scale-110 hover:bg-opacity-75">
-                <div class="bg-white aspect-video rounded overflow-hidden sadow-xl relative">
+                <div class="bg-white aspect-video rounded-md  overflow-hidden sadow-xl relative">
+                    <div class="absolute w-full h-full z-50"></div>
                     <iframe src="${link}" frameborder="0" class=" w-[1920px] h-[1020px] origin-[0_0%] scale-[0.2] duration-300 ease-out aspect-video"></iframe>
                 </div>
                 <div class=" text-white text-center p-5">
