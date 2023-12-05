@@ -9,8 +9,7 @@
 </head>
 
 <body>
-<!--     FIXME mobile view: atur height, ex h-32 md:h-16 -->
-    <header class=" bg-white h-16 w-full flex gap-4 p-2 items-center">
+    <header class=" bg-white h-32 md:h-16 w-full flex gap-4 p-2 items-center">
         <div class="md:flex grow items-center">
             <div class="flex grow items-center ">
                 <div class="p-2">
@@ -38,17 +37,16 @@
             </div>
         </div>
     </header>
-    <main class="min-h-screen flex flex-col-reverse md:grid md:grid-cols-2 mx-auto md:items-center">
-<!--         FIXME mobile view: atur lg posisi img -->
-        <div class="flex w-full h-md full"> <!-- FIXMe kasih max-md:grow-->
-            <img class="max-md:w-32 w-80 absolute left-12 max-md:pt-32 md:pt-48 md:rotate-[21deg]"
+    <main class="min-h-screen flex flex-col-reverse md:grid-cols-2 mx-auto md:items-center">
+        <div class="flex w-full h-md full max-md:grow md:min-h-screen max-md:mt-10">
+            <img class="max-md:w-44 w-64 absolute md:left-20  md:pt-48 md:rotate-[22deg]"
                 src="svg/iphone-tosca(1).svg" alt="">
-            <img class="max-md:w-32 max-md:-ml-24 w-80 md:absolute max-md:pt-24 md:left-56 md:pt-32 md:rotate-[21deg]"
+            <img class="max-md:w-44 w-64 max-md:ml-52 absolute md:left-52  md:pt-32 md:rotate-[22deg]"
                 src="svg/iphone-green(2).svg" alt="">
-            <img class="max-md:w-32 max-md:-ml-24 md:w-80 md:absolute md:left-96 max-md:24 md:pt-9 md:rotate-[21deg]"
+            <img class="max-md:w-44 md:w-64 max-md:ml-20 absolute md:left-80 max-md:24 md:pt-14 md:rotate-[22deg]"
                 src="svg/iphone-blue(3).svg" alt="">
         </div>
-        <div class="items-center max-md:justify-center">
+        <div class="md:pt-16 items-center max-md:justify-center md:min-h-screen max-md:mx-auto">
             <div class="font-playfair font-bold max-md:text-4xl text-6xl max-md:text-center">Crafting Your <br> Doodles
                 Story</div>
             <div class="md:pt-10 max-md:pt-5 flex max-md:ml-5">
@@ -59,7 +57,7 @@
                         deserunt ullamco</div>
                 </div>
             </div>
-            <div class="max-md:pt-5 pt-10 text-2xl font-semibold max-md:text-center">Beautiful Doodles to Tell Your
+            <div class="max-md:pt-5 pt-10 text-lg md:text-2xl font-semibold max-md:text-center">Beautiful Doodles to Tell Your
                 Story</div>
             <div class="max-md:pt-5 pt-10">
                 <button
